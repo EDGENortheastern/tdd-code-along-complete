@@ -1,6 +1,10 @@
-const numToRoman = (num) => {
+numToRoman = (num) => {
     const unit = 'I';
-    return `${unit.repeat(num)}`;
+    if (num === 4) {
+        return 'IV';
+    } else {
+        return `${unit.repeat(num)}`;
+    }
 }
 
 module.exports = { numToRoman }
