@@ -1,4 +1,4 @@
-numToRoman = (num) => {
+const numToRoman = (num) => {
     const unit = 'I';
     if (num === 4) {
         return 'IV';
