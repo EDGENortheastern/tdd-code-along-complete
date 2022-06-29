@@ -7,7 +7,7 @@ test('that Jest is working', () => {
 });
 
 // First describe block 👇
-describe('test that numbers 1-5 convert as expected', () => {
+describe('test that numbers 1-5 are converted as expected', () => {
     it('tests that 1 is "I"', () => {
         expect(numToRoman(1)).toBe("I");
     });
@@ -22,5 +22,12 @@ describe('test that numbers 1-5 convert as expected', () => {
     });
     it('tests that 5 is "V"', () => {
         expect(numToRoman(5)).toBe("V");
+    });
+});
+
+// Second describe block 👇
+describe('test that numbers 5-10 are converted as expected', () => {
+    it('tests that 6 is "VI"', () => {
+        expect(numToRoman(6)).toBe("VI");
     });
 });

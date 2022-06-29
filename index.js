@@ -1,12 +1,17 @@
 const numToRoman = (num) => {
+// From 5 up we need to start with V, then append Is
     const unit = 'I';
-    if (num === 5) {
-        return 'V';
+    let remaining = num;
+    let result = '';
+    if (remaining >= 5) {
+        result += 'V';
+        remaining -= 5;
     } else if (num === 4) {
-        return 'IV';
-    } else {
-        return `${unit.repeat(num)}`;
+        result += 'IV';
+        remaining -= 4;
     }
+    result += `${unit.repeat(remaining)}`;
+    return result;
 }
 
 module.exports = { numToRoman }
