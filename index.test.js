@@ -14,4 +14,7 @@ describe('test that numbers 1-5 convert as expected', () => {
     it('tests that 2 is "II"', () => {
         expect(numToRoman(2)).toBe("II");
     });
+    it('tests that 3 is "III"', () => {
+        expect(numToRoman(3)).toBe("III");
+    });
 });
