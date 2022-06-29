@@ -30,4 +30,10 @@ describe('test that numbers 5-10 are converted as expected', () => {
     it('tests that 6 is "VI"', () => {
         expect(numToRoman(6)).toBe("VI");
     });
+    it('tests that 7 is "VII"', () => {
+        expect(numToRoman(7)).toBe("VII");
+    });
+    it('tests that 8 is "VIII"', () => {
+        expect(numToRoman(8)).toBe("VIII");
+    });
 });
