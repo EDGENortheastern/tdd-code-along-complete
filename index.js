@@ -1,5 +1,6 @@
 const numToRoman = (num) => {
-    return num === 1 ? 'I' : num === 2 ? 'II' : 'III';
+    const unit = 'I';
+    return `${unit.repeat(num)}`;
 }
 
 module.exports = { numToRoman }
