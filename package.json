@@ -1,0 +1,22 @@
+{
+  "name": "tdd-code-along-complete",
+  "version": "1.0.0",
+  "description": "TDD workshop complete version with some frontend and input boundaries",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EDGENortheastern/tdd-code-along-complete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EDGENortheastern/tdd-code-along-complete/issues"
+  },
+  "homepage": "https://github.com/EDGENortheastern/tdd-code-along-complete#readme",
+  "dependencies": {
+    "jest": "^28.1.2"
+  }
+}
