@@ -5,6 +5,9 @@ const numToRoman = (num) => {
     if (num <= 0) {
         return 'The Romans had no representation for 0 and below';
     }
+    if (num>3999) {
+        return 'The Roman representation of numbers above 3999 was imperfect';
+    }
     let result = '';
     arabic.map((value, index) => {
         while (num >= value) {

@@ -105,4 +105,8 @@ describe('test that numbers below 1 cannot be converted', () => {
     it('should not convert negative numbers', () => {
         expect(numToRoman(-10)).toEqual('The Romans had no representation for 0 and below');
     });
+    it('should not convert 4000 and above', () => {
+        expect(numToRoman(4000)).toEqual('The Roman representation of numbers above 3999 was imperfect');
+        expect(numToRoman(5001)).toEqual('The Roman representation of numbers above 3999 was imperfect');
+    });
 });
