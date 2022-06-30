@@ -68,3 +68,41 @@ describe('test that numbers above 10 but below 40 are converted as expected', ()
         expect(numToRoman(39)).toBe("XXXIX");
     });
 });
+
+// Fourth describe block 👇
+describe('test that numbers from 40 up are converted as expected', () => {
+    it('tests that 40 is "XL"', () => {
+        expect(numToRoman(40)).toBe("XL");
+    });
+    it('tests that 50 is "L"', () => {
+        expect(numToRoman(50)).toBe("L");
+    });
+    it('tests that 99 is "XCIX"', () => {
+        expect(numToRoman(99)).toBe("XCIX");
+    });
+    it('tests that 100 is "C"', () => {
+        expect(numToRoman(100)).toBe("C");
+    });
+    it('tests that 500 is "D"', () => {
+        expect(numToRoman(500)).toBe("D");
+    });
+    it('tests that 400 is "CD"', () => {
+        expect(numToRoman(400)).toBe("CD");
+    });
+    it('tests that 1000 is "M"', () => {
+        expect(numToRoman(1000)).toBe("M");
+    });
+    it('tests that 2022 is "MMXXII"', () => {
+        expect(numToRoman(2022)).toBe("MMXXII");
+    });
+});
+
+// Fifth describe block 👇
+describe('test that numbers below 1 cannot be converted', () => {
+    it('should not convert 0', () => {
+        expect(numToRoman(0)).toEqual('The Romans had no representation for 0 and below');
+    });
+    it('should not convert negative numbers', () => {
+        expect(numToRoman(-10)).toEqual('The Romans had no representation for 0 and below');
+    });
+});

@@ -1,7 +1,10 @@
-const arabic = [10, 9, 5, 4, 1];
-const roman = ['X', 'IX', 'V', 'IV', 'I'];
+const arabic = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+const roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
 
 const numToRoman = (num) => {
+    if (num <= 0) {
+        return 'The Romans had no representation for 0 and below';
+    }
     let result = '';
     arabic.map((value, index) => {
         while (num >= value) {
