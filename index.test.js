@@ -39,4 +39,32 @@ describe('test that numbers 5-10 are converted as expected', () => {
     it('tests that 9 is "IX"', () => {
         expect(numToRoman(9)).toBe("IX");
     });
+    it('tests that 10 is "X"', () => {
+        expect(numToRoman(10)).toBe("X");
+    });
+});
+
+// Third describe block 👇
+describe('test that numbers above 10 but below 40 are converted as expected', () => {
+    it('tests that 19 is "XIX"', () => {
+        expect(numToRoman(19)).toBe("XIX");
+    });
+    it('tests that 11 is "XI"', () => {
+        expect(numToRoman(11)).toBe("XI");
+    });
+    it('tests that 32 is "XXXII"', () => {
+        expect(numToRoman(32)).toBe("XXXII");
+    });
+    it('tests that 33 is "XXXIII"', () => {
+        expect(numToRoman(33)).toBe("XXXIII");
+    });
+    it('tests that 34 is "XXXIV"', () => {
+        expect(numToRoman(34)).toBe("XXXIV");
+    });
+    it('tests that 35 is "XXXV"', () => {
+        expect(numToRoman(35)).toBe("XXXV");
+    });
+    it('tests that 39 is "XXXIX"', () => {
+        expect(numToRoman(39)).toBe("XXXIX");
+    });
 });

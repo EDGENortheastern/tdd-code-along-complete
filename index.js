@@ -1,19 +1,14 @@
+const arabic = [10, 9, 5, 4, 1];
+const roman = ['X', 'IX', 'V', 'IV', 'I'];
+
 const numToRoman = (num) => {
-// From 5 up we need to start with V, then append Is
-    const unit = 'I';
-    let remaining = num;
     let result = '';
-    if (remaining >= 9) {
-        result += 'IX';
-        remaining -= 9;
-    } else if (remaining >= 5) {
-        result += 'V';
-        remaining -= 5;
-    } else if (num === 4) {
-        result += 'IV';
-        remaining -= 4;
-    }
-    result += `${unit.repeat(remaining)}`;
+    arabic.map((value, index) => {
+        while (num >= value) {
+            result += roman[index];
+            num -= value;
+        }
+    });
     return result;
 }
 
