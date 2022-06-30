@@ -4,7 +4,7 @@
   "description": "TDD workshop complete version with some frontend and input boundaries",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/EDGENortheastern/tdd-code-along-complete#readme",
   "dependencies": {
     "jest": "^28.1.2"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.1"
   }
 }
