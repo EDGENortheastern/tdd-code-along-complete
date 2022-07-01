@@ -1,3 +1,5 @@
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 [![Coverage Status](https://coveralls.io/repos/github/EDGENortheastern/tdd-code-along-complete/badge.svg?branch=main)](https://coveralls.io/github/EDGENortheastern/tdd-code-along-complete?branch=main)
 
 # tdd-code-along-complete
